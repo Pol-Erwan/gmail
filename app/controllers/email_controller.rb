@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class EmailController < ApplicationController
   def index
     @emails = Email.all
   end

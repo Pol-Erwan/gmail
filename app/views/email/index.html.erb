@@ -1,0 +1,23 @@
+<h1 class="text-center mb-5">Welcome to my Gmail page</h1>
+
+
+<div class="container row" style="margin-right:auto;margin-left:auto;">
+    <div class="col-6 list-group p-1">
+      <li class="list-group-item active">Liste des Emails</li>
+    </div>
+    <div class="col-6 list-group p-1">
+      <li class="list-group-item active">Email selectionné</li>
+    </div>
+</div>
+
+<div class="container row" style="margin-right:auto;margin-left:auto;">
+    <div class="col-6 list-group p-1">
+   <% @emails.each do |email| %>
+      <li class="list-group-item">titre : <%= email.object %></li>
+   <% end %>
+    </div>
+    <div class="col-6  list-group p-1 ">
+      <li class="list-group-item text-muted"> (vide) Aucun email selectionné ...</li>
+    </div>
+</div>
+<D-r>

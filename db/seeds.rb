@@ -20,7 +20,7 @@ require 'faker'
 end
 
 5.times do
-  my_email = Email.new(object: Faker::Book.title, Body: Faker::Lorem.sentence)
+  my_email = Email.create(object: Faker::Book.title,Body: Faker::Lorem.paragraphs)
   my_email.save
 end
 
