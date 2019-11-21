@@ -2,11 +2,18 @@
 
 
 
-<div>
+<div class="container">
   <% @emails.each do |email| %>
-  <li><%= email.object %></li>
-    <div class="card">
-    </div>    
+  <div class="card m-1">
+    <div class="card m-1">
+    <li><%= email.object %></li>
+    </div>
+      <div class="card m-2">
+        <p><%= email.Body %></p>
+
+
+      </div>
+  </div>    
   <% end %>
 </div>
 
