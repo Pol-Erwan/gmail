@@ -1,5 +1,6 @@
-<h1 class="text-center mb-5">Welcome to my Gmail page</h1>
+<h1 class="text-center mb-4">Welcome to my Gmail page</h1>
 
+<%= link_to "Recevoir un Email", email_index_path, method: "post", class: "btn btn-success m-1 p-1", remote: true %>
 
 <div class="container row" style="margin-right:auto;margin-left:auto;">
     <div class="col-6 list-group p-1">
@@ -13,11 +14,11 @@
 <div class="container row" style="margin-right:auto;margin-left:auto;">
     <div class="col-6 list-group p-1">
    <% @emails.each do |email| %>
-      <li class="list-group-item">titre : <%= email.object %></li>
+      <li class="list-group-item">Titre : <%= email.object %></li>
    <% end %>
     </div>
     <div class="col-6  list-group p-1 ">
       <li class="list-group-item text-muted"> (vide) Aucun email selectionné ...</li>
     </div>
 </div>
-<D-r>
+
